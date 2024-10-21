@@ -1,100 +1,106 @@
-/* styles.css */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratnesh | Game Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Ratnesh's Portfolio</div>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #121212;
-    color: white;
-}
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hey, I'm Ratnesh 👋</h1>
+            <p>A Game Developer passionate about <span class="highlight">Unity</span>, <span class="highlight">VR</span>, and <span class="highlight">AI</span>.</p>
+            <a href="#projects" class="btn">Check Out My Work</a>
+        </div>
+    </section>
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #1f1f1f;
-}
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I'm an indie game developer from Chennai, India. I specialize in developing Unity and VR-based games. I also love working with AI models and implementing them in games. I'm currently pursuing a degree in Artificial Intelligence, but my heart lies in creating immersive game worlds.
+            </p>
+            <blockquote>"In games, we live many lives. We become heroes, villains, and everything in between." - Me</blockquote>
+        </div>
+    </section>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="images/medical_training.png" alt="Medical Training Using Rat">
+                    <div class="project-info">
+                        <h3>Medical Training Using Rat</h3>
+                        <a href="https://github.com/hsratneshsci/medical-training-rat" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/chemistry_lab.png" alt="OVR Chemistry Lab">
+                    <div class="project-info">
+                        <h3>Chemistry Lab</h3>
+                        <a href="https://github.com/hsratneshsci/ovr_chemistry-lab-using-unity" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                <!-- Add more project cards similarly -->
+            </div>
+        </div>
+    </section>
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fab fa-unity"></i> Unity
+                </div>
+                <div class="skill">
+                    <i class="fab fa-python"></i> Python
+                </div>
+                <div class="skill">
+                    <i class="fas fa-vr-cardboard"></i> VR Development
+                </div>
+                <!-- Add more skills similarly -->
+            </div>
+        </div>
+    </section>
 
-#hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out if you'd like to collaborate or just chat about game development!</p>
+            <div class="contact-links">
+                <a href="mailto:hsratneshsci@gmail.com" class="btn">Email Me</a>
+                <a href="https://www.linkedin.com/in/ratnesh-harishankar/" target="_blank" class="btn">LinkedIn</a>
+            </div>
+        </div>
+    </section>
 
-.hero-content {
-    max-width: 600px;
-}
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Ratnesh HS | Game Developer Portfolio</p>
+    </footer>
 
-.btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 2rem 0;
-}
-
-#projects .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-}
-
-.project-card {
-    background-color: #1f1f1f;
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.project-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.skill {
-    background-color: #333;
-    padding: 1rem;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #1f1f1f;
-}
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
