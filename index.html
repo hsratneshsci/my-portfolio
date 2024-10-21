@@ -4,127 +4,277 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ratnesh HS Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #222;
-            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+        
         .container {
-            width: 90%;
+            width: 85%;
             margin: 0 auto;
+            padding: 50px 0;
         }
-        h1 {
+
+        header {
             text-align: center;
-            margin-top: 50px;
+            padding: 30px 0;
         }
-        h2 {
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        p.tagline {
+            font-size: 1.2rem;
             color: #ff6f61;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+
+        nav {
+            margin-top: 20px;
+            text-align: center;
         }
+
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        section {
+            margin: 50px 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+        }
+
         ul li {
             background-color: #333;
-            padding: 10px;
-            margin: 5px 0;
-            border-radius: 5px;
+            border-radius: 8px;
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        a {
+
+        ul li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+        }
+
+        ul li a {
             color: #ff6f61;
             text-decoration: none;
+            font-weight: 600;
         }
+
+        ul li a:hover {
+            color: #fff;
+        }
+
+        ul li p {
+            color: #bfbfbf;
+            margin-top: 10px;
+        }
+
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px 0;
+            background-color: #111;
             margin-top: 50px;
-            background-color: #333;
         }
+
+        footer p {
+            color: #fff;
+            font-size: 1rem;
+        }
+
         footer a {
+            color: #ff6f61;
             margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            ul li {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Ratnesh HS - Portfolio</h1>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Ratnesh HS</h1>
+            <p class="tagline">Game Developer | VR Enthusiast | Software Engineer</p>
+            <nav>
+                <a href="#game-dev">Game Development</a>
+                <a href="#vr-dev">VR/AR Development</a>
+                <a href="#web-dev">Web Development</a>
+                <a href="#tools">Tools & Utilities</a>
+                <a href="#personal">Personal Projects</a>
+                <a href="#forked">Forked Projects</a>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Main Content -->
+    <div class="container">
+        
         <!-- Game Development Section -->
-        <h2>Game Development</h2>
-        <ul>
-            <li><a href="https://github.com/hsratneshsci/project-hsentar" target="_blank">Project HSentar</a> - My dream indie game project, featuring a unique storyline and innovative gameplay mechanics.</li>
-            <li><a href="https://github.com/hsratneshsci/first-game" target="_blank">First Game</a> - My first private game project.</li>
-            <li><a href="https://github.com/hsratneshsci/going-to-earth" target="_blank">Going to Earth</a> - Ren'Py game project.</li>
-            <li><a href="https://github.com/hsratneshsci/mission-jupiter-to-earth-sairam" target="_blank">Mission: Jupiter to Earth</a> - A space exploration game project.</li>
-        </ul>
+        <section id="game-dev">
+            <h2>Game Development</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/hsratneshsci/project-hsentar" target="_blank">Project HSentar</a>
+                    <p>My dream indie game project, featuring a unique storyline and innovative gameplay mechanics.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/hsratneshsci/first-game" target="_blank">First Game</a>
+                    <p>My first private game project.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/hsratneshsci/going-to-earth" target="_blank">Going to Earth</a>
+                    <p>A Ren'Py-based game project.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/hsratneshsci/mission-jupiter-to-earth-sairam" target="_blank">Mission: Jupiter to Earth</a>
+                    <p>A space exploration game project.</p>
+                </li>
+            </ul>
+        </section>
 
         <!-- VR/AR Development Section -->
-        <h2>VR/AR Development</h2>
-        <ul>
-            <li><a href="https://github.com/hsratneshsci/medical-training-rat" target="_blank">Medical Training Rat</a> - An interactive VR game for medical students.</li>
-            <li><a href="https://github.com/hsratneshsci/indian-history-vr" target="_blank">Indian History VR</a> - A virtual reality tour of Indian history.</li>
-            <li><a href="https://github.com/hsratneshsci/Photobooth" target="_blank">Photobooth</a> - Automated photobooth using Unity and Linux.</li>
-            <li><a href="https://github.com/hsratneshsci/virtual-tour" target="_blank">Virtual Tour</a> - An immersive virtual tour project.</li>
-            <li><a href="https://github.com/hsratneshsci/rover-control-panel-using-unity-and-openXR" target="_blank">Rover Control Panel Using Unity & OpenXR</a> - VR control panel for operating a Mars rover.</li>
-            <li><a href="https://github.com/hsratneshsci/ovr_chemistry-lab-using-unity" target="_blank">OVR Chemistry Lab Using Unity</a> - A virtual reality chemistry lab simulation.</li>
-        </ul>
+        <section id="vr-dev">
+            <h2>VR/AR Development</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/hsratneshsci/medical-training-rat" target="_blank">Medical Training Rat</a>
+                    <p>An interactive VR game for medical students.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/hsratneshsci/indian-history-vr" target="_blank">Indian History VR</a>
+                    <p>A virtual reality tour of Indian history.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/hsratneshsci/Photobooth" target="_blank">Photobooth</a>
+                    <p>An automated photobooth using Unity and Linux.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/hsratneshsci/rover-control-panel-using-unity-and-openXR" target="_blank">Rover Control Panel Using Unity & OpenXR</a>
+                    <p>VR control panel for operating a Mars rover.</p>
+                </li>
+            </ul>
+        </section>
 
         <!-- Web Development Section -->
-        <h2>Web Development</h2>
-        <ul>
-            <li><a href="https://github.com/hsratneshsci/my-portfolio" target="_blank">My Portfolio</a> - This portfolio website project.</li>
-            <li><a href="https://github.com/hsratneshsci/sih_troops_website" target="_blank">SIH Troops Website</a> - A hackathon project website.</li>
-            <li><a href="https://github.com/hsratneshsci/college_website" target="_blank">College Website</a> - A forked college website project.</li>
-            <li><a href="https://github.com/hsratneshsci/sih-ar-app" target="_blank">SIH AR App</a> - An AR-based web app.</li>
-            <li><a href="https://github.com/hsratneshsci/test-_resume" target="_blank">Test Resume</a> - A private resume website.</li>
-            <li><a href="https://github.com/hsratneshsci/hackathon_gamedev_site" target="_blank">Hackathon GameDev Site</a> - Game development hackathon site.</li>
-            <li><a href="https://github.com/hsratneshsci/my-website" target="_blank">My Website</a> - Private website project.</li>
-        </ul>
+        <section id="web-dev">
+            <h2>Web Development</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/hsratneshsci/my-portfolio" target="_blank">My Portfolio</a>
+                    <p>This portfolio website project.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/hsratneshsci/sih_troops_website" target="_blank">SIH Troops Website</a>
+                    <p>A hackathon project website.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/hsratneshsci/college_website" target="_blank">College Website</a>
+                    <p>A forked college website project.</p>
+                </li>
+            </ul>
+        </section>
 
         <!-- Tools & Utilities Section -->
-        <h2>Tools & Utilities</h2>
-        <ul>
-            <li><a href="https://github.com/hsratneshsci/Quest-Camera-access" target="_blank">Quest Camera Access</a> - ShaderLab project for accessing the camera on Oculus.</li>
-            <li><a href="https://github.com/hsratneshsci/Greyscale_app" target="_blank">Greyscale App</a> - Android app for toggling grayscale/full color.</li>
-            <li><a href="https://github.com/hsratneshsci/oculus-meta-toolkit" target="_blank">Oculus Meta Toolkit</a> - A toolkit for Oculus Meta, including APK casting and installation.</li>
-            <li><a href="https://github.com/hsratneshsci/hyprdots" target="_blank">Hyprdots</a> - Dynamic and aesthetic dots for Arch Hyprland.</li>
-            <li><a href="https://github.com/hsratneshsci/plane-notify" target="_blank">Plane Notify</a> - Tool for plane takeoff and landing notifications.</li>
-            <li><a href="https://github.com/hsratneshsci/miband_analytics" target="_blank">Mi Band Analytics</a> - Analytics tool for Mi Band data on PC.</li>
-        </ul>
+        <section id="tools">
+            <h2>Tools & Utilities</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/hsratneshsci/Quest-Camera-access" target="_blank">Quest Camera Access</a>
+                    <p>ShaderLab project for accessing the camera on Oculus.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/hsratneshsci/Greyscale_app" target="_blank">Greyscale App</a>
+                    <p>Android app for toggling grayscale/full color.</p>
+                </li>
+            </ul>
+        </section>
 
         <!-- Personal Projects Section -->
-        <h2>Personal Projects</h2>
-        <ul>
-            <li><a href="https://github.com/hsratneshsci/pavi-akka-bday" target="_blank">Pavi Akka Birthday</a> - Private birthday project for Pavi Akka.</li>
-            <li><a href="https://github.com/hsratneshsci/bamboo_birthday" target="_blank">Bamboo Birthday</a> - A private birthday project.</li>
-            <li><a href="https://github.com/hsratneshsci/happy-birthday-zara" target="_blank">Happy Birthday Zara</a> - Another birthday gift project.</li>
-            <li><a href="https://github.com/hsratneshsci/rhona_birthday_2023" target="_blank">Rhona Birthday 2023</a> - A CSS-based birthday wish project.</li>
-        </ul>
+        <section id="personal">
+            <h2>Personal Projects</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/hsratneshsci/pavi-akka-bday" target="_blank">Pavi Akka Birthday</a>
+                    <p>Private birthday project for Pavi Akka.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/hsratneshsci/rhona_birthday_2023" target="_blank">Rhona Birthday 2023</a>
+                    <p>A CSS-based birthday wish project.</p>
+                </li>
+            </ul>
+        </section>
 
         <!-- Forked Projects & Contributions Section -->
-        <h2>Forked Projects & Contributions</h2>
-        <ul>
-            <li><a href="https://github.com/hsratneshsci/Racer-fork" target="_blank">Racer Fork</a> - Fork of a racing game.</li>
-            <li><a href="https://github.com/hsratneshsci/ezy-slice" target="_blank">Ezy Slice</a> - Open-source mesh slicer for Unity.</li>
-            <li><a href="https://github.com/hsratneshsci/webclient" target="_blank">Webclient</a> - Fork of mega.nz’s web client.</li>
-            <li><a href="https://github.com/hsratneshsci/spotify-profile-readme" target="_blank">Spotify Profile ReadMe</a> - Dynamic profile README linked with Spotify.</li>
-            <li><a href="https://github.com/hsratneshsci/plane-notify" target="_blank">Plane Notify</a> - Open-source plane takeoff and landing tracker.</li>
-        </ul>
-
+        <section id="forked">
+            <h2>Forked Projects & Contributions</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/hsratneshsci/Racer-fork" target="_blank">Racer (Forked)</a>
+                    <p>Forked version of Racer game.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/hsratneshsci/facerecognition" target="_blank">Face Recognition (Forked)</a>
+                    <p>A face recognition project forked from an open-source repo.</p>
+                </li>
+            </ul>
+        </section>
     </div>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>Connect with me: 
-            <a href="https://in/ratnesh-harishankar" target="_blank">LinkedIn</a> | 
-            <a href="https://orcid.org/0009-0005-0506-6310" target="_blank">ORCID</a> | 
-            <a href="https://ratnesh-pixel.medium.com/" target="_blank">Medium</a> | 
-            <a href="https://ratsindie.itch.io/" target="_blank">Itch.io</a>
-        </p>
+        <div class="container">
+            <p>&copy; 2024 Ratnesh HS | Follow me on:
+                <a href="https://www.linkedin.com/in/ratnesh-hs" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/hsratneshsci" target="_blank">GitHub</a>
+            </p>
+        </div>
     </footer>
 
 </body>
