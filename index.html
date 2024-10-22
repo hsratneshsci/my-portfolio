@@ -15,7 +15,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         .container {
             width: 85%;
             margin: 0 auto;
@@ -83,6 +83,7 @@
             width: 250px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
         }
 
         ul li:hover {
@@ -105,6 +106,12 @@
             margin-top: 10px;
         }
 
+        ul li img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
         footer {
             text-align: center;
             padding: 30px 0;
@@ -125,6 +132,26 @@
 
         footer a:hover {
             color: #fff;
+        }
+
+        /* Go to Top Button */
+        #goTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            font-size: 18px;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        #goTop:hover {
+            background-color: #333;
         }
 
         /* Responsive Design */
@@ -161,18 +188,22 @@
             <h2>Game Development</h2>
             <ul>
                 <li>
+                    <img src="https://via.placeholder.com/250x150" alt="Game Project">
                     <a href="https://github.com/hsratneshsci/project-hsentar" target="_blank">Project HSentar</a>
                     <p>My dream indie game project, featuring a unique storyline and innovative gameplay mechanics.</p>
                 </li>
                 <li>
+                    <img src="https://via.placeholder.com/250x150" alt="Game Project">
                     <a href="https://github.com/hsratneshsci/first-game" target="_blank">First Game</a>
                     <p>My first private game project.</p>
                 </li>
                 <li>
+                    <img src="https://via.placeholder.com/250x150" alt="Game Project">
                     <a href="https://github.com/hsratneshsci/going-to-earth" target="_blank">Going to Earth</a>
                     <p>A Ren'Py-based game project.</p>
                 </li>
                 <li>
+                    <img src="https://via.placeholder.com/250x150" alt="Game Project">
                     <a href="https://github.com/hsratneshsci/mission-jupiter-to-earth-sairam" target="_blank">Mission: Jupiter to Earth</a>
                     <p>A space exploration game project.</p>
                 </li>
@@ -184,18 +215,22 @@
             <h2>VR/AR Development</h2>
             <ul>
                 <li>
+                    <img src="https://via.placeholder.com/250x150" alt="VR Project">
                     <a href="https://github.com/hsratneshsci/medical-training-rat" target="_blank">Medical Training Rat</a>
                     <p>An interactive VR game for medical students.</p>
                 </li>
                 <li>
+                    <img src="https://via.placeholder.com/250x150" alt="VR Project">
                     <a href="https://github.com/hsratneshsci/indian-history-vr" target="_blank">Indian History VR</a>
                     <p>A virtual reality tour of Indian history.</p>
                 </li>
                 <li>
+                    <img src="https://via.placeholder.com/250x150" alt="VR Project">
                     <a href="https://github.com/hsratneshsci/Photobooth" target="_blank">Photobooth</a>
                     <p>An automated photobooth using Unity and Linux.</p>
                 </li>
                 <li>
+                    <img src="https://via.placeholder.com/250x150" alt="VR Project">
                     <a href="https://github.com/hsratneshsci/rover-control-panel-using-unity-and-openXR" target="_blank">Rover Control Panel Using Unity & OpenXR</a>
                     <p>VR control panel for operating a Mars rover.</p>
                 </li>
@@ -207,64 +242,31 @@
             <h2>Web Development</h2>
             <ul>
                 <li>
+                    <img src="https://via.placeholder.com/250x150" alt="Web Project">
                     <a href="https://github.com/hsratneshsci/my-portfolio" target="_blank">My Portfolio</a>
                     <p>This portfolio website project.</p>
                 </li>
                 <li>
+                    <img src="https://via.placeholder.com/250x150" alt="Web Project">
                     <a href="https://github.com/hsratneshsci/sih_troops_website" target="_blank">SIH Troops Website</a>
                     <p>A hackathon project website.</p>
                 </li>
                 <li>
+                    <img src="https://via.placeholder.com/250x150" alt="Web Project">
                     <a href="https://github.com/hsratneshsci/college_website" target="_blank">College Website</a>
-                    <p>A forked college website project.</p>
+                    <p>A simple and informative college website.</p>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/250x150" alt="Web Project">
+                    <a href="https://github.com/hsratneshsci/face-mask-detection" target="_blank">Face Mask Detection</a>
+                    <p>A COVID-19 face mask detection project.</p>
                 </li>
             </ul>
         </section>
 
-        <!-- Tools & Utilities Section -->
-        <section id="tools">
-            <h2>Tools & Utilities</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/hsratneshsci/Quest-Camera-access" target="_blank">Quest Camera Access</a>
-                    <p>ShaderLab project for accessing the camera on Oculus.</p>
-                </li>
-                <li>
-                    <a href="https://github.com/hsratneshsci/Greyscale_app" target="_blank">Greyscale App</a>
-                    <p>Android app for toggling grayscale/full color.</p>
-                </li>
-            </ul>
-        </section>
+        <!-- Go to Top Button -->
+        <button id="goTop" onclick="scrollToTop()">↑</button>
 
-        <!-- Personal Projects Section -->
-        <section id="personal">
-            <h2>Personal Projects</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/hsratneshsci/pavi-akka-bday" target="_blank">Pavi Akka Birthday</a>
-                    <p>Private birthday project for Pavi Akka.</p>
-                </li>
-                <li>
-                    <a href="https://github.com/hsratneshsci/rhona_birthday_2023" target="_blank">Rhona Birthday 2023</a>
-                    <p>A CSS-based birthday wish project.</p>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Forked Projects & Contributions Section -->
-        <section id="forked">
-            <h2>Forked Projects & Contributions</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/hsratneshsci/Racer-fork" target="_blank">Racer (Forked)</a>
-                    <p>Forked version of Racer game.</p>
-                </li>
-                <li>
-                    <a href="https://github.com/hsratneshsci/facerecognition" target="_blank">Face Recognition (Forked)</a>
-                    <p>A face recognition project forked from an open-source repo.</p>
-                </li>
-            </ul>
-        </section>
     </div>
 
     <!-- Footer -->
@@ -276,6 +278,24 @@
             </p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Show "Go to Top" button when scrolling
+        window.onscroll = function() {
+            var goTopButton = document.getElementById("goTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                goTopButton.style.display = "block";
+            } else {
+                goTopButton.style.display = "none";
+            }
+        };
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
 
 </body>
 </html>
