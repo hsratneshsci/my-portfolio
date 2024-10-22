@@ -254,48 +254,76 @@
                 <li>
                     <img src="https://via.placeholder.com/250x150" alt="Web Project">
                     <a href="https://github.com/hsratneshsci/college_website" target="_blank">College Website</a>
-                    <p>A simple and informative college website.</p>
-                </li>
-                <li>
-                    <img src="https://via.placeholder.com/250x150" alt="Web Project">
-                    <a href="https://github.com/hsratneshsci/face-mask-detection" target="_blank">Face Mask Detection</a>
-                    <p>A COVID-19 face mask detection project.</p>
+                    <p>A fully responsive college website project.</p>
                 </li>
             </ul>
         </section>
 
-        <!-- Go to Top Button -->
-        <button id="goTop" onclick="scrollToTop()">↑</button>
+        <!-- Tools & Utilities Section -->
+        <section id="tools">
+            <h2>Tools & Utilities</h2>
+            <ul>
+                <li>
+                    <img src="https://via.placeholder.com/250x150" alt="Tools Project">
+                    <a href="https://github.com/hsratneshsci/rating-students-facemasher" target="_blank">Facemasher</a>
+                    <p>A cyber-style tool for rating students.</p>
+                </li>
+            </ul>
+        </section>
 
+        <!-- Personal Projects Section -->
+        <section id="personal">
+            <h2>Personal Projects</h2>
+            <ul>
+                <li>
+                    <img src="https://via.placeholder.com/250x150" alt="Personal Project">
+                    <a href="https://github.com/hsratneshsci/personal-project-name" target="_blank">Personal Project 1</a>
+                    <p>A personal project description here.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Forked Projects Section -->
+        <section id="forked">
+            <h2>Forked Projects</h2>
+            <ul>
+                <li>
+                    <img src="https://via.placeholder.com/250x150" alt="Forked Project">
+                    <a href="https://github.com/hsratneshsci/forked-project-name" target="_blank">Forked Project 1</a>
+                    <p>A forked project description here.</p>
+                </li>
+            </ul>
+        </section>
     </div>
+
+    <!-- Go to Top Button -->
+    <button id="goTop" onclick="scrollToTop()">↑</button>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Ratnesh HS | Follow me on:
-                <a href="https://www.linkedin.com/in/ratnesh-hs" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/hsratneshsci" target="_blank">GitHub</a>
-            </p>
-        </div>
+        <p>&copy; 2024 Ratnesh HS. All Rights Reserved.</p>
+        <a href="#game-dev">Game Development</a>
+        <a href="#vr-dev">VR/AR Development</a>
+        <a href="#web-dev">Web Development</a>
+        <a href="#tools">Tools & Utilities</a>
+        <a href="#personal">Personal Projects</a>
+        <a href="#forked">Forked Projects</a>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- JavaScript for Go to Top Button -->
     <script>
-        // Show "Go to Top" button when scrolling
         window.onscroll = function() {
-            var goTopButton = document.getElementById("goTop");
+            var goTopButton = document.getElementById('goTop');
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                goTopButton.style.display = "block";
+                goTopButton.style.display = 'block';
             } else {
-                goTopButton.style.display = "none";
+                goTopButton.style.display = 'none';
             }
         };
 
-        // Scroll to top function
         function scrollToTop() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
-
 </body>
 </html>
